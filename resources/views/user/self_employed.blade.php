@@ -7,13 +7,6 @@
     <title>PDF</title>
 
     <style>
-        @font-face {
-            font-family: 'Elegance';
-            font-weight: normal;
-            font-style: normal;
-            font-variant: normal;
-            src: url("http://eclecticgeek.com/dompdf/fonts/Elegance.ttf") format("truetype");
-        }
         body {
             font-family: 'Elegance', sans-serif;
         }

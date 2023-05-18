@@ -7,17 +7,10 @@
     <title>PDF</title>
 
     <style>
-        @font-face {
-            font-family: 'Elegance';
-            font-weight: normal;
-            font-style: normal;
-            font-variant: normal;
-            src: url("http://eclecticgeek.com/dompdf/fonts/Elegance.ttf") format("truetype");
-        }
         body {
             font-family: 'Elegance', sans-serif;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -43,6 +36,11 @@
             background-position: top center;
         }
 
+        .top-div .img-box.business {
+            height: 160px !important;
+            width: 160px !important;
+        }
+
         .top-div .img-box img {
             height: 100%;
             width: 100%;
@@ -62,6 +60,17 @@
             color: #fff;
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p,
+        ul,
+        li {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .bottom-div {
             padding: 15px 0;
         }
@@ -74,11 +83,14 @@
         ul {
             list-style-type: none;
             justify-content: space-between;
+            text-align: center;
         }
 
         ul li {
             display: inline-block;
             margin: 10px;
+            text-align: center;
+            justify-self: center;
         }
 
         .icon-box {
@@ -122,11 +134,14 @@
             margin-bottom: 15px;
         }
 
+        .bottom-div .img-box.business {
+            height: 110px !important;
+            width: 110px !important;
+        }
+
         .bottom-div .img-box img {
             height: 100%;
             width: auto;
-            /* object-fit: contain;
-            object-position: center; */
         }
 
         .icon-box.lg {
@@ -233,6 +248,26 @@
 
         .footer table {
             width: 100%;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .details {
+            display: flex;
+        }
+
+        .services {
+            width: 50%;
+        }
+
+        .products {
+            width: 50%;
+        }
+
+        .services-products {
+            width: 75%;
         }
     </style>
 </head>
